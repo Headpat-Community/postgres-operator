@@ -37,7 +37,7 @@ postgresVersion: 17
 # monitoring enables the ability to monitor the Postgres cluster through a
 # metrics exporter that can be scraped by Prometheus. This defaults to the value
 # below.
-# monitoring: false
+monitoring: true
 
 # instrumentation enables the ability to monitor the Postgres cluster through an
 # OpenTelemetry collector. This defaults to the value below.
@@ -74,11 +74,11 @@ postgresVersion: 17
 
 # instanceName lets you set the name of your instances. This defaults to
 # the value below. Setting "instances" overrides this value.
-# instanceName: instance1
+instanceName: pg-main
 
 # instanceSize sets the size of the volume that contains the data. This defaults
 # to the value below. Settings "instances" overrides this value.
-# instanceSize: 1Gi
+instanceSize: 1Gi
 
 # instanceStorageClassName sets the storage class for the volume that contains the data.
 # This defaults to the "default" storage class defined in the cluster.
